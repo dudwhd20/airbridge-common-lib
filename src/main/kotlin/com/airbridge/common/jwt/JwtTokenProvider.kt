@@ -19,9 +19,9 @@ class JwtTokenProvider(
         val now = Date()
         val validity = Date(now.time + validityInMilliseconds)
         return Jwts.builder()
-            .setClaims(claims)
-            .setIssuedAt(now)
-            .setExpiration(validity)
+            .claims(claims)
+            .issuedAt(now)
+            .expiration(validity)
             .signWith(secretKey, Jwts.SIG.HS256)
             .compact()
     }
