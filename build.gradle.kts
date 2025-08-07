@@ -5,7 +5,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.airbridge.common"
+group = "com.airbridge"
 version = "1.0-SNAPSHOT"
 
 publishing{
